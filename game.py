@@ -1,4 +1,5 @@
-def solve(n, k, s):
+def game(n,k):
+               def solve(n, k, s):
 			if len(n)==1:
 				return n[-1]
 			n.pop(s)
@@ -9,3 +10,6 @@ def solve(n, k, s):
 		x = (0+k-1)%n
 		ans = solve(l, k, x)
 		return ans
+
+n,k = map(int,input().split())
+	
